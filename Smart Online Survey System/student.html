@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Survey | SmartSurvey</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+
+        <aside class="sidebar">
+            <a href="dashboard.html" class="sidebar-brand"><i class="fas fa-poll"></i> SmartSurvey</a>
+            <a href="dashboard.html" class="nav-item"><i class="fas fa-home"></i> Dashboard</a>
+            <a href="analytics.html" class="nav-item"><i class="fas fa-chart-pie"></i> Analytics</a>
+
+            <div style="margin-top:auto;">
+                <button id="logoutBtn" class="nav-item" style="background:none;border:none;width:100%;cursor:pointer;">
+                    <i class="fas fa-sign-out-alt"></i> Logout
+                </button>
+            </div>
+        </aside>
+
+        <main class="main-content">
+
+            <div style="max-width:800px;margin:0 auto;">
+
+                <div style="display:flex;align-items:center;gap:15px;margin-bottom:2rem;">
+                    <a href="dashboard.html" class="btn" style="padding:0.5rem;background:#eee;">
+                        <i class="fas fa-arrow-left"></i>
+                    </a>
+
+                    <h2>🎓 Student Satisfaction Survey</h2>
+                    <div style="margin-bottom:25px;">
+
+    <div style="
+    width:100%;
+    height:10px;
+    background:#e5e7eb;
+    border-radius:20px;
+    overflow:hidden;">
+
+        <div style="
+        width:100%;
+        height:100%;
+        background:linear-gradient(135deg,#6366f1,#a855f7);">
+        </div>
+
+    </div>
+
+    <p style="
+    text-align:right;
+    margin-top:8px;
+    color:#64748b;">
+        Step 5 of 5
+    </p>
+
+</div>
+                </div>
+
+                <form id="studentForm">
+
+                    <div class="q-card">
+                        <p style="font-weight:600;">
+                            1. Are you satisfied with the quality of teaching provided by the faculty?
+                        </p>
+
+                        <div class="options-flex">
+                            <div class="option-btn"><input type="radio" name="q1" value="Excellent" id="s1" required><label for="s1">Excellent</label></div>
+                            <div class="option-btn"><input type="radio" name="q1" value="Good" id="s2"><label for="s2">Good</label></div>
+                            <div class="option-btn"><input type="radio" name="q1" value="Average" id="s3"><label for="s3">Average</label></div>
+                            <div class="option-btn"><input type="radio" name="q1" value="Poor" id="s4"><label for="s4">Poor</label></div>
+                        </div>
+                    </div>
+
+                    <div class="q-card">
+                        <p style="font-weight:600;">
+                            2. Are the library facilities adequate for your studies?
+                        </p>
+
+                        <div class="options-flex">
+                            <div class="option-btn"><input type="radio" name="q2" value="Excellent" id="s5" required><label for="s5">Excellent</label></div>
+                            <div class="option-btn"><input type="radio" name="q2" value="Good" id="s6"><label for="s6">Good</label></div>
+                            <div class="option-btn"><input type="radio" name="q2" value="Average" id="s7"><label for="s7">Average</label></div>
+                            <div class="option-btn"><input type="radio" name="q2" value="Poor" id="s8"><label for="s8">Poor</label></div>
+                        </div>
+                    </div>
+
+                    <div class="q-card">
+                        <p style="font-weight:600;">
+                            3. Are laboratory facilities and equipment satisfactory?
+                        </p>
+
+                        <div class="options-flex">
+                            <div class="option-btn"><input type="radio" name="q3" value="Excellent" id="s9" required><label for="s9">Excellent</label></div>
+                            <div class="option-btn"><input type="radio" name="q3" value="Good" id="s10"><label for="s10">Good</label></div>
+                            <div class="option-btn"><input type="radio" name="q3" value="Average" id="s11"><label for="s11">Average</label></div>
+                            <div class="option-btn"><input type="radio" name="q3" value="Poor" id="s12"><label for="s12">Poor</label></div>
+                        </div>
+                    </div>
+
+                    <div class="q-card">
+                        <p style="font-weight:600;">
+                            4. Are campus facilities and environment well maintained?
+                        </p>
+
+                        <div class="options-flex">
+                            <div class="option-btn"><input type="radio" name="q4" value="Excellent" id="s13" required><label for="s13">Excellent</label></div>
+                            <div class="option-btn"><input type="radio" name="q4" value="Good" id="s14"><label for="s14">Good</label></div>
+                            <div class="option-btn"><input type="radio" name="q4" value="Average" id="s15"><label for="s15">Average</label></div>
+                            <div class="option-btn"><input type="radio" name="q4" value="Poor" id="s16"><label for="s16">Poor</label></div>
+                        </div>
+                    </div>
+
+                    <div class="q-card">
+                        <p style="font-weight:600;">
+                            5. What improvements or suggestions would you like to provide?
+                        </p>
+
+                        <textarea
+                            id="q5"
+                            class="form-control"
+                            rows="4"
+                            placeholder="Type your suggestions here..."></textarea>
+                    </div>
+
+                    <div style="display:flex;justify-content:space-between;margin-top:20px;">
+
+    <button
+        type="button"
+        class="btn"
+        style="background:#e5e7eb;color:#111827;padding:12px 25px;">
+        Previous
+    </button>
+
+    <button
+        type="submit"
+        class="btn btn-primary"
+        style="padding:12px 25px;">
+        Next / Submit
+    </button>
+
+</div>
+
+                </form>
+
+            </div>
+
+        </main>
+
+    </div>
+
+   <script type="module" src="css/js/student.js"></script>
+</body>
+</html>

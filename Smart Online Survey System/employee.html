@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Survey | SmartSurvey</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<div class="app-container">
+
+    <aside class="sidebar">
+        <a href="dashboard.html" class="sidebar-brand">
+            <i class="fas fa-poll"></i> SmartSurvey
+        </a>
+
+        <a href="dashboard.html" class="nav-item">
+            <i class="fas fa-home"></i> Dashboard
+        </a>
+
+        <a href="analytics.html" class="nav-item">
+            <i class="fas fa-chart-pie"></i> Analytics
+        </a>
+
+        <div style="margin-top:auto;">
+            <button id="logoutBtn" class="nav-item" style="background:none;border:none;width:100%;cursor:pointer;">
+                <i class="fas fa-sign-out-alt"></i> Logout
+            </button>
+        </div>
+    </aside>
+
+    <main class="main-content">
+
+        <div style="max-width:800px;margin:0 auto;">
+
+            <div style="display:flex;align-items:center;gap:15px;margin-bottom:2rem;">
+                <a href="dashboard.html" class="btn" style="padding:0.5rem;background:#eee;">
+                    <i class="fas fa-arrow-left"></i>
+                </a>
+
+                <h2>👨‍💼 Employee Satisfaction Survey</h2>
+            </div>
+
+            <form id="employeeForm">
+
+                <div class="q-card">
+                    <p style="font-weight:600;">
+                        1. Are you satisfied with your current work environment?
+                    </p>
+
+                    <div class="options-flex">
+                        <div class="option-btn">
+                            <input type="radio" name="q1" value="Excellent" id="e1" required>
+                            <label for="e1">Excellent</label>
+                        </div>
+
+                        <div class="option-btn">
+                            <input type="radio" name="q1" value="Good" id="e2">
+                            <label for="e2">Good</label>
+                        </div>
+
+                        <div class="option-btn">
+                            <input type="radio" name="q1" value="Average" id="e3">
+                            <label for="e3">Average</label>
+                        </div>
+
+                        <div class="option-btn">
+                            <input type="radio" name="q1" value="Poor" id="e4">
+                            <label for="e4">Poor</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="q-card">
+                    <p style="font-weight:600;">
+                        2. Do you receive adequate support from your management team?
+                    </p>
+
+                    <div class="options-flex">
+                        <div class="option-btn">
+                            <input type="radio" name="q2" value="Excellent" id="e5" required>
+                            <label for="e5">Excellent</label>
+                        </div>
+
+                        <div class="option-btn">
+                            <input type="radio" name="q2" value="Good" id="e6">
+                            <label for="e6">Good</label>
+                        </div>
+
+                        <div class="option-btn">
+                            <input type="radio" name="q2" value="Average" id="e7">
+                            <label for="e7">Average</label>
+                        </div>
+
+                        <div class="option-btn">
+                            <input type="radio" name="q2" value="Poor" id="e8">
+                            <label for="e8">Poor</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="q-card">
+                    <p style="font-weight:600;">
+                        3. Are communication channels within the organization effective?
+                    </p>
+
+                    <div class="options-flex">
+                        <div class="option-btn">
+                            <input type="radio" name="q3" value="Excellent" id="e9" required>
+                            <label for="e9">Excellent</label>
+                        </div>
+
+                        <div class="option-btn">
+                            <input type="radio" name="q3" value="Good" id="e10">
+                            <label for="e10">Good</label>
+                        </div>
+
+                        <div class="option-btn">
+                            <input type="radio" name="q3" value="Average" id="e11">
+                            <label for="e11">Average</label>
+                        </div>
+
+                        <div class="option-btn">
+                            <input type="radio" name="q3" value="Poor" id="e12">
+                            <label for="e12">Poor</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="q-card">
+                    <p style="font-weight:600;">
+                        4. Do you have the resources needed to perform your job efficiently?
+                    </p>
+
+                    <div class="options-flex">
+                        <div class="option-btn">
+                            <input type="radio" name="q4" value="Excellent" id="e13" required>
+                            <label for="e13">Excellent</label>
+                        </div>
+
+                        <div class="option-btn">
+                            <input type="radio" name="q4" value="Good" id="e14">
+                            <label for="e14">Good</label>
+                        </div>
+
+                        <div class="option-btn">
+                            <input type="radio" name="q4" value="Average" id="e15">
+                            <label for="e15">Average</label>
+                        </div>
+
+                        <div class="option-btn">
+                            <input type="radio" name="q4" value="Poor" id="e16">
+                            <label for="e16">Poor</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="q-card">
+                    <p style="font-weight:600;">
+                        5. What improvements or suggestions would you like to provide for creating a better workplace?
+                    </p>
+
+                    <textarea
+                        id="q5"
+                        class="form-control"
+                        rows="4"
+                        placeholder="Type your suggestions here..."></textarea>
+                </div>
+
+                <button
+                    type="submit"
+                    class="btn btn-primary"
+                    style="width:100%;padding:1.2rem;">
+                    Submit Employee Survey
+                </button>
+
+            </form>
+
+        </div>
+
+    </main>
+
+</div>
+<script type="module" src="css/js/employee.js"></script>
+
+</body>
+</html>

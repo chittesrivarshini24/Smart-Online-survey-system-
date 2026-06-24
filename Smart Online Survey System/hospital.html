@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hospital Survey | SmartSurvey</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <a href="dashboard.html" class="sidebar-brand"><i class="fas fa-poll"></i> SmartSurvey</a>
+            <a href="dashboard.html" class="nav-item"><i class="fas fa-home"></i> Dashboard</a>
+            <a href="analytics.html" class="nav-item"><i class="fas fa-chart-pie"></i> Analytics</a>
+            <div style="margin-top: auto;">
+                <button id="logoutBtn" class="nav-item" style="background:none; border:none; width:100%; cursor:pointer;"><i class="fas fa-sign-out-alt"></i> Logout</button>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 2rem;">
+                    <a href="dashboard.html" class="btn" style="padding: 0.5rem; background: #eee;"><i class="fas fa-arrow-left"></i></a>
+                    <h2>🏥 Hospital Feedback Survey</h2>
+                </div>
+
+                <form id="hospitalForm">
+                    <div class="q-card">
+                        <p style="font-weight: 600;">1. Are you satisfied with the medical services provided?</p>
+                        <div class="options-flex">
+                            <div class="option-btn"><input type="radio" name="q1" value="Excellent" id="h1_1" required><label for="h1_1">Excellent</label></div>
+                            <div class="option-btn"><input type="radio" name="q1" value="Good" id="h1_2"><label for="h1_2">Good</label></div>
+                            <div class="option-btn"><input type="radio" name="q1" value="Average" id="h1_3"><label for="h1_3">Average</label></div>
+                            <div class="option-btn"><input type="radio" name="q1" value="Poor" id="h1_4"><label for="h1_4">Poor</label></div>
+                        </div>
+                    </div>
+
+                    <div class="q-card">
+                        <p style="font-weight: 600;">2. Was the hospital environment clean and comfortable?</p>
+                        <div class="options-flex">
+                            <div class="option-btn"><input type="radio" name="q2" value="Excellent" id="h2_1" required><label for="h2_1">Excellent</label></div>
+                            <div class="option-btn"><input type="radio" name="q2" value="Good" id="h2_2"><label for="h2_2">Good</label></div>
+                            <div class="option-btn"><input type="radio" name="q2" value="Average" id="h2_3"><label for="h2_3">Average</label></div>
+                            <div class="option-btn"><input type="radio" name="q2" value="Poor" id="h2_4"><label for="h2_4">Poor</label></div>
+                        </div>
+                    </div>
+
+                    <div class="q-card">
+                        <p style="font-weight: 600;">3. Were the doctors and nursing staff supportive and professional?</p>
+                        <div class="options-flex">
+                            <div class="option-btn"><input type="radio" name="q3" value="Excellent" id="h3_1" required><label for="h3_1">Excellent</label></div>
+                            <div class="option-btn"><input type="radio" name="q3" value="Good" id="h3_2"><label for="h3_2">Good</label></div>
+                            <div class="option-btn"><input type="radio" name="q3" value="Average" id="h3_3"><label for="h3_3">Average</label></div>
+                            <div class="option-btn"><input type="radio" name="q3" value="Poor" id="h3_4"><label for="h3_4">Poor</label></div>
+                        </div>
+                    </div>
+
+                    <div class="q-card">
+                        <p style="font-weight: 600;">4. Was the appointment and treatment process convenient?</p>
+                        <div class="options-flex">
+                            <div class="option-btn"><input type="radio" name="q4" value="Excellent" id="h4_1" required><label for="h4_1">Excellent</label></div>
+                            <div class="option-btn"><input type="radio" name="q4" value="Good" id="h4_2"><label for="h4_2">Good</label></div>
+                            <div class="option-btn"><input type="radio" name="q4" value="Average" id="h4_3"><label for="h4_3">Average</label></div>
+                            <div class="option-btn"><input type="radio" name="q4" value="Poor" id="h4_4"><label for="h4_4">Poor</label></div>
+                        </div>
+                    </div>
+
+                    <div class="q-card">
+                        <p style="font-weight: 600;">5. What improvements or suggestions would you like to provide for better hospital services?</p>
+                        <textarea id="q5" class="form-control" rows="4" placeholder="Type your suggestions here..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1.2rem;">Submit Hospital Survey</button>
+                </form>
+            </div>
+        </main>
+    </div>
+    <script type="module" src="css/js/hospital.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Office Survey | SmartSurvey</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+
+        <aside class="sidebar">
+            <a href="dashboard.html" class="sidebar-brand"><i class="fas fa-poll"></i> SmartSurvey</a>
+            <a href="dashboard.html" class="nav-item"><i class="fas fa-home"></i> Dashboard</a>
+            <a href="analytics.html" class="nav-item"><i class="fas fa-chart-pie"></i> Analytics</a>
+
+            <div style="margin-top:auto;">
+                <button id="logoutBtn" class="nav-item" style="background:none;border:none;width:100%;cursor:pointer;">
+                    <i class="fas fa-sign-out-alt"></i> Logout
+                </button>
+            </div>
+        </aside>
+
+        <main class="main-content">
+
+            <div style="max-width:800px;margin:0 auto;">
+
+                <div style="display:flex;align-items:center;gap:15px;margin-bottom:2rem;">
+                    <a href="dashboard.html" class="btn" style="padding:0.5rem;background:#eee;">
+                        <i class="fas fa-arrow-left"></i>
+                    </a>
+
+                    <h2>🏢 Office Infrastructure Survey</h2>
+                </div>
+
+                <form id="officeForm">
+
+                    <div class="q-card">
+                        <p style="font-weight:600;">
+                            1. Are you satisfied with the office facilities and infrastructure?
+                        </p>
+
+                        <div class="options-flex">
+                            <div class="option-btn"><input type="radio" name="q1" value="Excellent" id="o1" required><label for="o1">Excellent</label></div>
+                            <div class="option-btn"><input type="radio" name="q1" value="Good" id="o2"><label for="o2">Good</label></div>
+                            <div class="option-btn"><input type="radio" name="q1" value="Average" id="o3"><label for="o3">Average</label></div>
+                            <div class="option-btn"><input type="radio" name="q1" value="Poor" id="o4"><label for="o4">Poor</label></div>
+                        </div>
+                    </div>
+
+                    <div class="q-card">
+                        <p style="font-weight:600;">
+                            2. Is communication among employees effective and productive?
+                        </p>
+
+                        <div class="options-flex">
+                            <div class="option-btn"><input type="radio" name="q2" value="Excellent" id="o5" required><label for="o5">Excellent</label></div>
+                            <div class="option-btn"><input type="radio" name="q2" value="Good" id="o6"><label for="o6">Good</label></div>
+                            <div class="option-btn"><input type="radio" name="q2" value="Average" id="o7"><label for="o7">Average</label></div>
+                            <div class="option-btn"><input type="radio" name="q2" value="Poor" id="o8"><label for="o8">Poor</label></div>
+                        </div>
+                    </div>
+
+                    <div class="q-card">
+                        <p style="font-weight:600;">
+                            3. Are office services meeting your expectations?
+                        </p>
+
+                        <div class="options-flex">
+                            <div class="option-btn"><input type="radio" name="q3" value="Excellent" id="o9" required><label for="o9">Excellent</label></div>
+                            <div class="option-btn"><input type="radio" name="q3" value="Good" id="o10"><label for="o10">Good</label></div>
+                            <div class="option-btn"><input type="radio" name="q3" value="Average" id="o11"><label for="o11">Average</label></div>
+                            <div class="option-btn"><input type="radio" name="q3" value="Poor" id="o12"><label for="o12">Poor</label></div>
+                        </div>
+                    </div>
+
+                    <div class="q-card">
+                        <p style="font-weight:600;">
+                            4. Do workplace policies support your daily activities effectively?
+                        </p>
+
+                        <div class="options-flex">
+                            <div class="option-btn"><input type="radio" name="q4" value="Excellent" id="o13" required><label for="o13">Excellent</label></div>
+                            <div class="option-btn"><input type="radio" name="q4" value="Good" id="o14"><label for="o14">Good</label></div>
+                            <div class="option-btn"><input type="radio" name="q4" value="Average" id="o15"><label for="o15">Average</label></div>
+                            <div class="option-btn"><input type="radio" name="q4" value="Poor" id="o16"><label for="o16">Poor</label></div>
+                        </div>
+                    </div>
+
+                    <div class="q-card">
+                        <p style="font-weight:600;">
+                            5. What improvements or suggestions would you like to provide for improving office operations and facilities?
+                        </p>
+
+                        <textarea
+                            id="q5"
+                            class="form-control"
+                            rows="4"
+                            placeholder="Type your suggestions here..."></textarea>
+                    </div>
+
+                    <button
+                        type="submit"
+                        class="btn btn-primary"
+                        style="width:100%;padding:1.2rem;">
+                        Submit Office Survey
+                    </button>
+
+                </form>
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <script type="module" src="css/js/office.js"></script>
+</body>
+</html>
